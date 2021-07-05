@@ -12,7 +12,7 @@ function Footer() {
           "
           >
             <div class="footer__logo">
-              <img src="img/logo.svg" alt="" />
+              <img src="img/eoverse.svg" alt="" />
             </div>
             <p class="footer__tagline">
               Digital marketplace for crypto collectibles <br />
