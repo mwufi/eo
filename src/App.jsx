@@ -8,6 +8,12 @@ import Explore from './components/Explore';
 import Collections from './components/Collections';
 import GettingStarted from './components/GettingStarted';
 import Footer from './components/Footer';
+import Modal from './components/Modal';
+
+// second page
+import ExpandedExplore from './components/ExpandedExplore';
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
   // Create the count state.
@@ -19,20 +25,59 @@ function App() {
   }, [count, setCount]);
   // Return the App component.
   return (
-    <div className="App">
-      <Header />
-      <main class="main">
-        <Home />
-        <div class="container">
-          <LiveAuctions />
-          <TopSellers />
-          <Explore />
-          <Collections />
-          <GettingStarted />
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/index2.html">
+            <main class="main">
+              <Home
+                variant="center"
+                title={
+                  <>
+                    Discover, collect, and sell <br />
+                    extraordinary
+                    <span>
+                      <b> NFTs</b>
+                    </span>
+                  </>
+                }
+                subtitle={
+                  'Digital marketplace for crypto collectibles and non-fungible tokens.'
+                }
+              />
+              <div class="container">
+                <ExpandedExplore />
+                <LiveAuctions />
+              </div>
+            </main>
+          </Route>
+          <Route path="/">
+            <main class="main">
+              <Home
+                title="The Largest NFT Marketplace"
+                subtitle={
+                  <>
+                    Digital marketplace for crypto collectibles and non-fungible
+                    tokens. <br />
+                    Buy, sell, and discover exclusive digital assets.
+                  </>
+                }
+              />
+              <div class="container">
+                <LiveAuctions />
+                <TopSellers />
+                <Explore />
+                <Collections />
+                <GettingStarted />
+                <Modal />
+              </div>
+            </main>
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

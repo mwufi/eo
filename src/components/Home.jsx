@@ -1,17 +1,20 @@
 import React from 'react';
+import cx from 'classnames';
 
-function Home() {
+function Home({ variant, title, subtitle}) {
   return (
     <div class="home">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="home__content">
-              <h1 class="home__title">The largest NFT marketplace</h1>
+            <div
+              class={cx('home__content', {
+                'home__content--center': variant === 'center',
+              })}
+            >
+              <h1 class="home__title">{title}</h1>
               <p class="home__text">
-                Digital marketplace for crypto collectibles and non-fungible
-                tokens. <br />
-                Buy, sell, and discover exclusive digital assets.
+                {subtitle}
               </p>
 
               <div class="home__btns">
