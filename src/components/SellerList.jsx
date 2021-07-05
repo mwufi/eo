@@ -56,7 +56,7 @@ function SellerList() {
     <div class="col-12">
       <ul class="sellers-list">
         {sellers.map(({ avatar, link, displayname, price }, i) => (
-          <li>
+          <li key={displayname + i.toString()}>
             <span class="sellers-list__number">{i}</span>
             <div class="sellers-list__author sellers-list__author--verified">
               <img src={avatar} alt="" />
