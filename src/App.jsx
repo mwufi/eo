@@ -5,8 +5,9 @@ import Home from './components/Home';
 import LiveAuctions from './components/LiveAuctions';
 import TopSellers from './components/TopSellers';
 import Explore from './components/Explore';
-
-import './App.css';
+import Collections from './components/Collections';
+import GettingStarted from './components/GettingStarted';
+import Footer from './components/Footer';
 
 function App() {
   // Create the count state.
@@ -26,8 +27,11 @@ function App() {
           <LiveAuctions />
           <TopSellers />
           <Explore />
+          <Collections />
+          <GettingStarted />
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
