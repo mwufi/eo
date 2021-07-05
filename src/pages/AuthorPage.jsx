@@ -1,7 +1,7 @@
 import React from 'react';
-import ProfileTabs from './components/ProfileTabs';
-import Tabs from './components/Tabs';
-import Author from './components/Author';
+import ProfileTabs from '../components/ProfileTabs';
+import Tabs from '../components/Tabs';
+import Author from '../components/Author';
 
 function AuthorPage() {
   return (

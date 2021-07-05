@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import Header from './components/Header';
 import Home from './components/Home';
+import Title from './components/Title';
 import LiveAuctions from './components/LiveAuctions';
 import TopSellers from './components/TopSellers';
 import Explore from './components/Explore';
@@ -9,6 +10,7 @@ import Collections from './components/Collections';
 import GettingStarted from './components/GettingStarted';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
+import Section from './components/Section';
 
 // second page
 import ExpandedExplore from './components/ExpandedExplore';
@@ -16,6 +18,7 @@ import ExpandedExplore from './components/ExpandedExplore';
 // create page
 import CreatePage from './pages/CreatePage';
 import AuthorPage from './pages/AuthorPage';
+import ItemPage from './pages/ItemPage';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -33,6 +36,9 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+          <Route path="/item.html">
+            <ItemPage />
+          </Route>
           <Route path="/create.html">
             <CreatePage />
           </Route>
@@ -77,7 +83,12 @@ function App() {
               <div class="container">
                 <LiveAuctions />
                 <TopSellers />
-                <Explore />
+
+                <Section>
+                  <Title title="Explore!!" />
+                  <Explore />
+                </Section>
+
                 <Collections />
                 <GettingStarted />
                 <Modal />
