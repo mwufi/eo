@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function AssetInfo() {
   return (
@@ -17,14 +18,14 @@ function AssetInfo() {
           <span>Creator</span>
           <div class="asset__author asset__author--verified">
             <img src="img/avatars/avatar5.jpg" alt="" />
-            <a href="author.html">@midinh</a>
+            <Link to="author.html">@midinh</Link>
           </div>
         </li>
         <li>
           <span>Collection</span>
           <div class="asset__author">
             <img src="img/avatars/avatar9.jpg" alt="" />
-            <a href="collection.html">The Meta Key</a>
+            <Link to="collection.html">The Meta Key</Link>
           </div>
         </li>
       </ul>
@@ -81,7 +82,7 @@ function AssetInfo() {
               <p>
                 Bid placed for <b>11.00 ETH</b> 4 hours ago <br />
                 by
-                <a href="author.html">@erikkk</a>
+                <Link to="author.html">@erikkk</Link>
               </p>
             </div>
 
@@ -90,7 +91,7 @@ function AssetInfo() {
               <p>
                 Bid placed for <b>10.00 ETH</b> 5 hours ago <br />
                 by
-                <a href="author.html">@johndoe</a>
+                <Link to="author.html">@johndoe</Link>
               </p>
             </div>
 
@@ -99,7 +100,7 @@ function AssetInfo() {
               <p>
                 Bid placed for <b>2.508 ETH</b> 5 hours ago <br />
                 by
-                <a href="author.html">@n1ckname</a>
+                <Link to="author.html">@n1ckname</Link>
               </p>
             </div>
 
@@ -108,7 +109,7 @@ function AssetInfo() {
               <p>
                 Bid placed for <b>2.2799 ETH</b> 6 hours ago <br />
                 by
-                <a href="author.html">@johndoe</a>
+                <Link to="author.html">@johndoe</Link>
               </p>
             </div>
 
@@ -117,7 +118,7 @@ function AssetInfo() {
               <p>
                 Put on sale for <b>0.55 ETH</b> 1 days ago <br />
                 by
-                <a href="author.html">@midinh</a>
+                <Link to="author.html">@midinh</Link>
               </p>
             </div>
           </div>
@@ -130,7 +131,7 @@ function AssetInfo() {
               <p>
                 Bid placed for <b>11.00 ETH</b> 4 hours ago <br />
                 by
-                <a href="author.html">@erikkk</a>
+                <Link to="author.html">@erikkk</Link>
               </p>
             </div>
 
@@ -139,7 +140,7 @@ function AssetInfo() {
               <p>
                 Bid placed for <b>10.00 ETH</b> 5 hours ago <br />
                 by
-                <a href="author.html">@johndoe</a>
+                <Link to="author.html">@johndoe</Link>
               </p>
             </div>
 
@@ -148,7 +149,7 @@ function AssetInfo() {
               <p>
                 Bid placed for <b>2.508 ETH</b> 5 hours ago <br />
                 by
-                <a href="author.html">@n1ckname</a>
+                <Link to="author.html">@n1ckname</Link>
               </p>
             </div>
           </div>
@@ -160,7 +161,7 @@ function AssetInfo() {
               <span>Owner</span>
               <div class="asset__author asset__author--verified">
                 <img src="img/avatars/avatar5.jpg" alt="" />
-                <a href="author.html">@midinh</a>
+                <Link to="author.html">@midinh</Link>
               </div>
             </li>
             <li>

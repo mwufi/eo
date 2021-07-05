@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Card({
   timeLeft = '15 minutes left',
@@ -26,11 +27,11 @@ function Card({
         )}
       </a>
       <h3 class="card__title">
-        <a href="item.html">{title}</a>
+        <Link to="item.html">{title}</Link>
       </h3>
       <div class="card__author card__author--verified">
         <img src="img/avatars/avatar5.jpg" alt="" />
-        <a href="author.html">{author}</a>
+        <Link to="author.html">{author}</Link>
       </div>
       <div class="card__info">
         {wasSoldFor ? (
