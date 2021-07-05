@@ -14,9 +14,12 @@ import Modal from './components/Modal';
 import ExpandedExplore from './components/ExpandedExplore';
 
 // author page
-import Profile from './components/Profile';
+import ProfileTabs from './components/ProfileTabs';
 import Tabs from './components/Tabs';
-import AuthorPage from './components/AuthorPage';
+import Author from './components/Author';
+
+// create page
+import CreatePage from './pages/CreatePage';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -34,6 +37,9 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+          <Route path="/create.html">
+            <CreatePage />
+          </Route>
           <Route path="/index2.html">
             <main class="main">
               <Home
@@ -63,10 +69,10 @@ function App() {
               <div class="container">
                 <div class="row row--grid">
                   <div class="col-12 col-xl-3">
-                    <AuthorPage />
+                    <Author />
                   </div>
                   <div class="col-12 col-xl-9">
-                    <Profile />
+                    <ProfileTabs />
                     <Tabs />
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Profile() {
+function ProfileTabs() {
   return (
     <div class="profile">
       <ul class="nav nav-tabs profile__tabs" id="profile__tabs" role="tablist">
@@ -60,4 +60,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default ProfileTabs;

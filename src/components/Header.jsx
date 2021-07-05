@@ -189,13 +189,13 @@ function Header() {
                   <a href="authors.html">Authors</a>
                 </li>
                 <li>
-                  <a href="author.html">Author</a>
+                  <Link to="author.html">Author</Link>
                 </li>
                 <li>
-                  <a href="collection.html">Collection</a>
+                  <Link to="collection.html">Collection</Link>
                 </li>
                 <li>
-                  <a href="create.html">Create</a>
+                  <Link to="create.html">Create</Link>
                 </li>
               </ul>
             </li>

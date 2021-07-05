@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function AuthorPage() {
   return (
@@ -8,10 +9,10 @@ function AuthorPage() {
           <img src="img/avatars/avatar5.jpg" alt="" />
         </a>
         <h1 class="author__name">
-          <a href="author.html">Lily Rose</a>
+          <Link to="author.html">Lily Rose</Link>
         </h1>
         <h2 class="author__nickname">
-          <a href="author.html">@l1rose</a>
+          <Link to="author.html">@l1rose</Link>
         </h2>
         <p class="author__text">
           All the Lorem Ipsum generators on the Internet tend to repeat
