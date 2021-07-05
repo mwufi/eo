@@ -13,13 +13,9 @@ import Modal from './components/Modal';
 // second page
 import ExpandedExplore from './components/ExpandedExplore';
 
-// author page
-import ProfileTabs from './components/ProfileTabs';
-import Tabs from './components/Tabs';
-import Author from './components/Author';
-
 // create page
 import CreatePage from './pages/CreatePage';
+import AuthorPage from './pages/AuthorPage';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -64,20 +60,7 @@ function App() {
             </main>
           </Route>
           <Route path="/author.html">
-            <main class="main">
-              <div class="main__author" data-bg="img/bg/bg.jpeg"></div>
-              <div class="container">
-                <div class="row row--grid">
-                  <div class="col-12 col-xl-3">
-                    <Author />
-                  </div>
-                  <div class="col-12 col-xl-9">
-                    <ProfileTabs />
-                    <Tabs />
-                  </div>
-                </div>
-              </div>
-            </main>
+            <AuthorPage />
           </Route>
           <Route path="/">
             <main class="main">
