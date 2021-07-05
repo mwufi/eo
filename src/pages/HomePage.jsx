@@ -10,21 +10,40 @@ import GettingStarted from '../components/GettingStarted';
 import Carousel from '../components/Carousel';
 import Section from '../components/Section';
 
+const variants = [
+  {
+    title: () => (
+      <>
+        The first <br />
+        <span>
+          <b> author-created NFT</b>
+        </span>
+        <br />
+        universe
+      </>
+    ),
+  },
+  {
+    variant: 'center',
+    title: () => (
+      <>
+        Discover, collect, and sell <br />
+        <span>
+          <b> author-created </b>
+        </span>
+        NFTs
+      </>
+    ),
+  },
+];
 
 function HomePage() {
+  const idx = 0;
   return (
     <main class="main">
       <Home
-        title={
-          <>
-            The first <br />
-            <span>
-              <b> author-created NFT</b>
-            </span>
-            <br />
-            universe
-          </>
-        }
+        title={variants[idx].title()}
+        variant={variants[idx].variant}
         subtitle={
           <>
             Digital marketplace for writers, fans, and creators. <br />
