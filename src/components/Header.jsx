@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header class="header">
       <div class="header__content">
         <div class="header__logo">
-          <a href="index.html">
+          <Link to="/">
             <img src="img/logo.svg" alt="" />
-          </a>
+          </Link>
         </div>
 
         <form action="#" class="header__search">
@@ -50,13 +51,13 @@ function Header() {
                 aria-labelledby="dropdownMenuHome"
               >
                 <li>
-                  <a href="index.html">Home style 1</a>
+                  <Link to="index.html">Home style 1</Link>
                 </li>
                 <li>
-                  <a href="index2.html">Home style 2</a>
+                  <Link to="index2.html">Home style 2</Link>
                 </li>
                 <li>
-                  <a href="index3.html">Home style 3</a>
+                  <Link to="index3.html">Home style 3</Link>
                 </li>
               </ul>
             </li>
