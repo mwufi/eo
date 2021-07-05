@@ -14,11 +14,11 @@ function ItemPage() {
         </div>
 
         <div class="row">
-          <div class="col-12 col-xl-8">
+          <div class="col-12 col-xl-6">
             <AssetDisplay />
           </div>
 
-          <div class="col-12 col-xl-4">
+          <div class="col-12 col-xl-6">
             <AssetInfo />
           </div>
         </div>

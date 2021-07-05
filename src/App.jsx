@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import Header from './components/Header';
 import Home from './components/Home';
-import Title from './components/Title';
-import LiveAuctions from './components/LiveAuctions';
+import Carousel from './components/Carousel';
 import TopSellers from './components/TopSellers';
 import Explore from './components/Explore';
 import Collections from './components/Collections';
@@ -19,23 +17,19 @@ import ExpandedExplore from './components/ExpandedExplore';
 import CreatePage from './pages/CreatePage';
 import AuthorPage from './pages/AuthorPage';
 import ItemPage from './pages/ItemPage';
+import CollectionPage from './pages/CollectionPage';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  // Create the count state.
-  const [count, setCount] = useState(0);
-  // Create the counter (+1 every second).
-  useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
-  // Return the App component.
   return (
     <Router>
       <div className="App">
         <Header />
         <Switch>
+          <Route path="/collection.html">
+            <CollectionPage />
+          </Route>
           <Route path="/item.html">
             <ItemPage />
           </Route>
@@ -61,7 +55,9 @@ function App() {
               />
               <div class="container">
                 <ExpandedExplore />
-                <LiveAuctions />
+                <Section title="Live Auctions">
+                  <Carousel />
+                </Section>
               </div>
             </main>
           </Route>
@@ -81,11 +77,12 @@ function App() {
                 }
               />
               <div class="container">
-                <LiveAuctions />
+                <Section title="Live Auctions">
+                  <Carousel id="live" />
+                </Section>
                 <TopSellers />
 
-                <Section>
-                  <Title title="Explore!!" />
+                <Section title="Explore">
                   <Explore />
                 </Section>
 
