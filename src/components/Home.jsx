@@ -1,7 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
+import { Link } from 'react-router-dom';
 
-function Home({ variant, title, subtitle}) {
+function Home({ variant, title, subtitle }) {
   return (
     <div class="home">
       <div class="container">
@@ -13,17 +14,15 @@ function Home({ variant, title, subtitle}) {
               })}
             >
               <h1 class="home__title">{title}</h1>
-              <p class="home__text">
-                {subtitle}
-              </p>
+              <p class="home__text">{subtitle}</p>
 
               <div class="home__btns">
                 <a href="explore.html" class="home__btn home__btn--clr">
                   Explore
                 </a>
-                <a href="signin.html" class="home__btn">
+                <Link to="create.html" class="home__btn">
                   Create
-                </a>
+                </Link>
               </div>
             </div>
           </div>

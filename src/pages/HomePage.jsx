@@ -1,12 +1,14 @@
 import React from 'react';
 
-import TopSellers from './components/TopSellers';
-import Explore from './components/Explore';
-import Collections from './components/Collections';
-import GettingStarted from './components/GettingStarted';
+import TopSellers from '../components/TopSellers';
+import Home from '../components/Home';
+import Modal from '../components/Modal';
+import Explore from '../components/Explore';
+import Collections from '../components/Collections';
+import GettingStarted from '../components/GettingStarted';
 
-import Carousel from './components/Carousel';
-import Section from './components/Section';
+import Carousel from '../components/Carousel';
+import Section from '../components/Section';
 
 
 function HomePage() {
