@@ -13,6 +13,11 @@ import Modal from './components/Modal';
 // second page
 import ExpandedExplore from './components/ExpandedExplore';
 
+// author page
+import Profile from './components/Profile';
+import Tabs from './components/Tabs';
+import AuthorPage from './components/AuthorPage';
+
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -49,6 +54,22 @@ function App() {
               <div class="container">
                 <ExpandedExplore />
                 <LiveAuctions />
+              </div>
+            </main>
+          </Route>
+          <Route path="/author.html">
+            <main class="main">
+              <div class="main__author" data-bg="img/bg/bg.jpeg"></div>
+              <div class="container">
+                <div class="row row--grid">
+                  <div class="col-12 col-xl-3">
+                    <AuthorPage />
+                  </div>
+                  <div class="col-12 col-xl-9">
+                    <Profile />
+                    <Tabs />
+                  </div>
+                </div>
               </div>
             </main>
           </Route>
